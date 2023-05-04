@@ -16,7 +16,6 @@
 
 package com.google.samples.apps.nowinandroid.feature.interests
 
-import android.util.Log
 import androidx.lifecycle.SavedStateHandle
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
@@ -60,7 +59,7 @@ class InterestsViewModel @Inject constructor(
         getFollowableTopics(sortBy = TopicSortField.NAME).map {
             InterestsUiState.Interests(
                 topics = it,
-                selectedTopicId = topicId
+                selectedTopicId = topicId,
             )
         }.stateIn(
             scope = viewModelScope,
@@ -90,9 +89,9 @@ private fun topicUiState(
     topicId: String?,
     userDataRepository: UserDataRepository,
     userNewsResourceRepository: UserNewsResourceRepository,
-    topicsRepository: TopicsRepository
+    topicsRepository: TopicsRepository,
 ): Flow<TopicUiState?> {
-    if(topicId == null) {
+    if (topicId == null) {
         return flowOf(null)
     }
 
@@ -119,7 +118,7 @@ private fun topicUiState(
                 topic = topic,
                 isFollowed = followed,
             ),
-            newsResources = newsResources
+            newsResources = newsResources,
         )
     }.onStart {
         emit(TopicUiState.Loading)

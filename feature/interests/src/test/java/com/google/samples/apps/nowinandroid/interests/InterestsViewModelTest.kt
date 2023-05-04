@@ -72,7 +72,7 @@ class InterestsViewModelTest {
             userDataRepository = userDataRepository,
             getFollowableTopics = getFollowableTopicsUseCase,
             topicsRepository = topicsRepository,
-            userNewsResourceRepository = userNewsResourceRepository
+            userNewsResourceRepository = userNewsResourceRepository,
         )
     }
 
@@ -182,4 +182,3 @@ class InterestsViewModelTest {
         collectJob.cancel()
     }
 }
-

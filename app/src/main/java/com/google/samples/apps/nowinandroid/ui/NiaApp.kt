@@ -16,7 +16,6 @@
 
 package com.google.samples.apps.nowinandroid.ui
 
-import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.foundation.layout.ExperimentalLayoutApi
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.WindowInsets

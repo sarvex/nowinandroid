@@ -77,7 +77,7 @@ class InterestsScreenTest {
             InterestsScreen(
                 uiState = InterestsUiState.Interests(
                     topics = followableTopicTestData,
-                    selectedTopicId = null
+                    selectedTopicId = null,
                 ),
             )
         }

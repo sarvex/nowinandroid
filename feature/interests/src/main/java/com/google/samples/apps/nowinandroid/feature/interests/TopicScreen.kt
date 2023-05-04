@@ -239,7 +239,7 @@ fun TopicScreenPopulated(
             TopicScreen(
                 topicUiState = TopicUiState.Success(
                     followableTopic = userNewsResources[0].followableTopics[0],
-                    newsResources = userNewsResources
+                    newsResources = userNewsResources,
                 ),
                 onBackClick = {},
                 onFollowClick = {},

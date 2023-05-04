@@ -17,7 +17,6 @@
 package com.google.samples.apps.nowinandroid.feature.interests.navigation
 
 import androidx.compose.foundation.lazy.LazyListState
-import androidx.compose.foundation.lazy.rememberLazyListState
 import androidx.navigation.NavController
 import androidx.navigation.NavGraphBuilder
 import androidx.navigation.NavOptions
